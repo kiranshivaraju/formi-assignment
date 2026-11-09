@@ -1,0 +1,21 @@
+# Controller state store. Host port defaults to 55432 (override with FORMI_PG_PORT) to avoid
+# colliding with any other local Postgres.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: formi
+      POSTGRES_PASSWORD: formi
+      POSTGRES_DB: formi
+    ports:
+      - "127.0.0.1:${FORMI_PG_PORT:-55432}:5432"
+    volumes:
+      - controller_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U formi -d formi"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  controller_pg:

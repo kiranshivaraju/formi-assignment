@@ -1,0 +1,1008 @@
+[crash_test 22:07:23] sim up: scenarios/public_02_incidents.yaml on http://127.0.0.1:8711; kill targets (sim minute): [2325, 4980, 6075, 10005]
+[crash_test 22:07:25] kill 1: SIGKILL at sim minute 0 (2027-01-04T00:00:00+05:30)
+[crash_test 22:07:47] kill 2: SIGKILL at sim minute 2325 (2027-01-05T14:45:00+05:30)
+[crash_test 22:07:57] kill 3: SIGKILL at sim minute 4980 (2027-01-07T11:00:00+05:30)
+[crash_test 22:08:01] kill 4: SIGKILL at sim minute 6075 (2027-01-08T05:15:00+05:30)
+[crash_test 22:08:16] kill 5: SIGKILL at sim minute 10005 (2027-01-10T22:45:00+05:30)
+[crash_test 22:08:16] final restart, running to completion
+[crash_test 22:08:31] PASS  every restart resumed (one run created): 1 run(s) created across 6 starts
+[crash_test 22:08:31] PASS  all chunks ingested: bookmark 496, sim chunks 497
+[crash_test 22:08:31] PASS  events saved == sim produced: 324315 vs 324315
+[crash_test 22:08:31] PASS  no gaps: ids 1..324315
+[crash_test 22:08:31] PASS  no duplicates: 324315 distinct of 324315
+[crash_test 22:08:31] PASS  scoreboard dials == raw calls: 245008 vs 245008
+[crash_test 22:08:31] PASS  scoreboard connected == raw: 64898 vs 64898
+[crash_test 22:08:31] PASS  one summary per workflow per day: 30 vs 10 days x 3 workflows
+[crash_test 22:08:31] PASS  one diary row per config change: 28 vs 28
+[crash_test 22:08:31] PASS  our changes reached the sim (something was in flight): 26 config change(s) by the controller
+[crash_test 22:08:31] PASS  no change applied twice: ['489156b0-nw_renewal-1', '489156b0-nw_renewal-2', '489156b0-nw_renewal-3', '489156b0-nw_renewal-4', '489156b0-nw_renewal-6', '489156b0-nw_renewal-7', '489156b0-nw_kyc-1', '489156b0-nw_kyc-2', '489156b0-ks_cancel-1', '489156b0-ks_cancel-2', '489156b0-ks_cancel-3', '489156b0-ks_cancel-4', '489156b0-ks_cancel-5', '489156b0-ks_cancel-6', '489156b0-ks_cancel-7', '489156b0-ks_cancel-8', '489156b0-ks_cancel-9', '489156b0-ks_cancel-10', '489156b0-ks_cancel-11', '489156b0-ks_cancel-12', '489156b0-ks_cancel-13', '489156b0-ks_cancel-14', '489156b0-ks_cancel-15', '489156b0-ks_cancel-16', '489156b0-ks_cancel-17', '489156b0-ks_cancel-18']
+[crash_test 22:08:31] PASS  sim's applied changes == ours recorded applied: sim 26, ours 26
+[crash_test 22:08:31] PASS  nothing left half-sent or half-applied: 0 open
+[crash_test 22:08:31] PASS  no change stuck in flight: 0 stuck
+[crash_test 22:08:31] PASS  no request refused by the sim: 0 refused
+[crash_test 22:08:31] RESULT: PASS
+ecisions_written": 0, "last_event_id": 187254, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.29, "sim_minute": 105, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187254, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.346, "sim_minute": 120, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187254, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.396, "sim_minute": 135, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187254, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.446, "sim_minute": 150, "events": 1, "ingest_s": 0.007, "decisions_written": 0, "last_event_id": 187255, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.488, "sim_minute": 165, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187255, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.545, "sim_minute": 180, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187255, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.597, "sim_minute": 195, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187255, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.653, "sim_minute": 210, "events": 1, "ingest_s": 0.009, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.691, "sim_minute": 225, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.741, "sim_minute": 240, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.784, "sim_minute": 255, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.822, "sim_minute": 270, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.862, "sim_minute": 285, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.911, "sim_minute": 300, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.951, "sim_minute": 315, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242260.991, "sim_minute": 330, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.03, "sim_minute": 345, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.077, "sim_minute": 360, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.119, "sim_minute": 375, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.159, "sim_minute": 390, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.197, "sim_minute": 405, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.246, "sim_minute": 420, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.286, "sim_minute": 435, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.33, "sim_minute": 450, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.375, "sim_minute": 465, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.424, "sim_minute": 480, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 187256, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.602, "sim_minute": 495, "events": 3303, "ingest_s": 0.122, "decisions_written": 0, "last_event_id": 190559, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.646, "sim_minute": 510, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 190559, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.687, "sim_minute": 525, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 190559, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.739, "sim_minute": 540, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 190559, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.798, "sim_minute": 555, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 190734, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.859, "sim_minute": 570, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 190909, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.916, "sim_minute": 585, "events": 175, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 191084, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242261.994, "sim_minute": 600, "events": 175, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 191259, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242262.052, "sim_minute": 615, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 191484, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.108, "sim_minute": 630, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 191709, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.167, "sim_minute": 645, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 191934, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.231, "sim_minute": 660, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 192159, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.293, "sim_minute": 675, "events": 226, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 192385, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.35, "sim_minute": 690, "events": 226, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 192611, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.404, "sim_minute": 705, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 192836, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.467, "sim_minute": 720, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 193061, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.524, "sim_minute": 735, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 193286, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.588, "sim_minute": 750, "events": 225, "ingest_s": 0.025, "decisions_written": 0, "last_event_id": 193511, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.666, "sim_minute": 765, "events": 225, "ingest_s": 0.026, "decisions_written": 0, "last_event_id": 193736, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.748, "sim_minute": 780, "events": 226, "ingest_s": 0.024, "decisions_written": 0, "last_event_id": 193962, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242262.805, "sim_minute": 795, "events": 226, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 194188}
+{"event": "step", "wall_ts": 1794242262.861, "sim_minute": 810, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 194413}
+{"event": "step", "wall_ts": 1794242262.913, "sim_minute": 825, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 194638}
+{"event": "step", "wall_ts": 1794242262.99, "sim_minute": 840, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 194863, "changes": {"caller_id_health:ks_cancel": "queued"}}
+{"event": "step", "wall_ts": 1794242263.047, "sim_minute": 855, "events": 226, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 195089, "changes": {"caller_id_health:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242263.106, "sim_minute": 870, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 195314, "changes": {"caller_id_health:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242263.166, "sim_minute": 885, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 195539, "changes": {"caller_id_health:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242263.239, "sim_minute": 900, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 195764, "changes": {"caller_id_health:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242263.296, "sim_minute": 915, "events": 226, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 195990}
+{"event": "step", "wall_ts": 1794242263.353, "sim_minute": 930, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 196215}
+{"event": "step", "wall_ts": 1794242263.414, "sim_minute": 945, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 196440}
+{"event": "step", "wall_ts": 1794242263.473, "sim_minute": 960, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 196665}
+{"event": "step", "wall_ts": 1794242263.53, "sim_minute": 975, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 196890}
+{"event": "step", "wall_ts": 1794242263.585, "sim_minute": 990, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 197115}
+{"event": "step", "wall_ts": 1794242263.64, "sim_minute": 1005, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 197340}
+{"event": "step", "wall_ts": 1794242263.695, "sim_minute": 1020, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 197565}
+{"event": "step", "wall_ts": 1794242263.754, "sim_minute": 1035, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 197790}
+{"event": "step", "wall_ts": 1794242263.811, "sim_minute": 1050, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 198015}
+{"event": "step", "wall_ts": 1794242263.866, "sim_minute": 1065, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 198240}
+{"event": "step", "wall_ts": 1794242263.925, "sim_minute": 1080, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 198465}
+{"event": "step", "wall_ts": 1794242263.983, "sim_minute": 1095, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 198690}
+{"event": "step", "wall_ts": 1794242264.04, "sim_minute": 1110, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 198915}
+{"event": "step", "wall_ts": 1794242264.094, "sim_minute": 1125, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 199140}
+{"event": "step", "wall_ts": 1794242264.149, "sim_minute": 1140, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 199365}
+{"event": "step", "wall_ts": 1794242264.204, "sim_minute": 1155, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 199590}
+{"event": "step", "wall_ts": 1794242264.26, "sim_minute": 1170, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 199815}
+{"event": "step", "wall_ts": 1794242264.316, "sim_minute": 1185, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 200040}
+{"event": "step", "wall_ts": 1794242264.381, "sim_minute": 1200, "events": 225, "ingest_s": 0.024, "decisions_written": 0, "last_event_id": 200265}
+{"event": "step", "wall_ts": 1794242264.437, "sim_minute": 1215, "events": 175, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 200440}
+{"event": "step", "wall_ts": 1794242264.493, "sim_minute": 1230, "events": 175, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 200615}
+{"event": "step", "wall_ts": 1794242264.548, "sim_minute": 1245, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 200790}
+{"event": "step", "wall_ts": 1794242264.62, "sim_minute": 1260, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 200965, "changes": {"caller_id_health:nw_renewal": "queued"}}
+{"event": "step", "wall_ts": 1794242264.658, "sim_minute": 1275, "events": 1, "ingest_s": 0.005, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.692, "sim_minute": 1290, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.726, "sim_minute": 1305, "events": 0, "ingest_s": 0.001, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.761, "sim_minute": 1320, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.795, "sim_minute": 1335, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.831, "sim_minute": 1350, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.866, "sim_minute": 1365, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.901, "sim_minute": 1380, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.935, "sim_minute": 1395, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242264.969, "sim_minute": 1410, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.005, "sim_minute": 1425, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.051, "sim_minute": 1440, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.088, "sim_minute": 1455, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.124, "sim_minute": 1470, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.161, "sim_minute": 1485, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.197, "sim_minute": 1500, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.231, "sim_minute": 1515, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.268, "sim_minute": 1530, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.305, "sim_minute": 1545, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.34, "sim_minute": 1560, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.375, "sim_minute": 1575, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.414, "sim_minute": 1590, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.453, "sim_minute": 1605, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.489, "sim_minute": 1620, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.526, "sim_minute": 1635, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.564, "sim_minute": 1650, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.602, "sim_minute": 1665, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.637, "sim_minute": 1680, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.672, "sim_minute": 1695, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.708, "sim_minute": 1710, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.743, "sim_minute": 1725, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.779, "sim_minute": 1740, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.816, "sim_minute": 1755, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.852, "sim_minute": 1770, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.89, "sim_minute": 1785, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.927, "sim_minute": 1800, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.964, "sim_minute": 1815, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242265.999, "sim_minute": 1830, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242266.034, "sim_minute": 1845, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242266.069, "sim_minute": 1860, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242266.107, "sim_minute": 1875, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242266.142, "sim_minute": 1890, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242266.177, "sim_minute": 1905, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242266.214, "sim_minute": 1920, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 200966}
+{"event": "step", "wall_ts": 1794242266.38, "sim_minute": 1935, "events": 3303, "ingest_s": 0.118, "decisions_written": 0, "last_event_id": 204269}
+{"event": "step", "wall_ts": 1794242266.416, "sim_minute": 1950, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 204269}
+{"event": "step", "wall_ts": 1794242266.452, "sim_minute": 1965, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 204269}
+{"event": "step", "wall_ts": 1794242266.493, "sim_minute": 1980, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 204269}
+{"event": "step", "wall_ts": 1794242266.553, "sim_minute": 1995, "events": 175, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 204444}
+{"event": "step", "wall_ts": 1794242266.614, "sim_minute": 2010, "events": 175, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 204619}
+{"event": "step", "wall_ts": 1794242266.669, "sim_minute": 2025, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 204794}
+{"event": "step", "wall_ts": 1794242266.743, "sim_minute": 2040, "events": 175, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 204969, "changes": {"caller_id_health:nw_renewal": "queued"}}
+{"event": "step", "wall_ts": 1794242266.803, "sim_minute": 2055, "events": 226, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 205195}
+{"event": "step", "wall_ts": 1794242266.863, "sim_minute": 2070, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 205420}
+{"event": "step", "wall_ts": 1794242266.923, "sim_minute": 2085, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 205645}
+{"event": "step", "wall_ts": 1794242266.981, "sim_minute": 2100, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 205870}
+{"event": "step", "wall_ts": 1794242267.038, "sim_minute": 2115, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 206095}
+{"event": "step", "wall_ts": 1794242267.096, "sim_minute": 2130, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 206320}
+{"event": "step", "wall_ts": 1794242267.159, "sim_minute": 2145, "events": 225, "ingest_s": 0.024, "decisions_written": 0, "last_event_id": 206545}
+{"event": "step", "wall_ts": 1794242267.218, "sim_minute": 2160, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 206770}
+{"event": "step", "wall_ts": 1794242267.278, "sim_minute": 2175, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 206995}
+{"event": "step", "wall_ts": 1794242267.338, "sim_minute": 2190, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 207220}
+{"event": "step", "wall_ts": 1794242267.396, "sim_minute": 2205, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 207445}
+{"event": "step", "wall_ts": 1794242267.457, "sim_minute": 2220, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 207670}
+{"event": "step", "wall_ts": 1794242267.518, "sim_minute": 2235, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 207895}
+{"event": "step", "wall_ts": 1794242267.581, "sim_minute": 2250, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 208120}
+{"event": "step", "wall_ts": 1794242267.641, "sim_minute": 2265, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 208345}
+{"event": "step", "wall_ts": 1794242267.701, "sim_minute": 2280, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 208570}
+{"event": "step", "wall_ts": 1794242267.763, "sim_minute": 2295, "events": 225, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 208795}
+{"event": "step", "wall_ts": 1794242267.822, "sim_minute": 2310, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 209020}
+[crash_test 22:07:47] kill 2: SIGKILL at sim minute 2325 (2027-01-05T14:45:00+05:30)
+{"event": "run_resolved", "wall_ts": 1794242268.049, "run_id": 1, "created": false, "scenario": "public_02_incidents", "resume_from_chunk": 79, "sim_minute": 2325}
+{"event": "history_ingested", "wall_ts": 1794242268.051, "events": 0, "seconds": 0.0}
+{"event": "step", "wall_ts": 1794242268.105, "sim_minute": 2325, "events": 0, "ingest_s": 0.001, "decisions_written": 0, "last_event_id": 209245}
+{"event": "step", "wall_ts": 1794242268.175, "sim_minute": 2340, "events": 225, "ingest_s": 0.025, "decisions_written": 0, "last_event_id": 209470}
+{"event": "step", "wall_ts": 1794242268.236, "sim_minute": 2355, "events": 225, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 209695}
+{"event": "step", "wall_ts": 1794242268.299, "sim_minute": 2370, "events": 225, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 209920}
+{"event": "step", "wall_ts": 1794242268.359, "sim_minute": 2385, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 210145}
+{"event": "step", "wall_ts": 1794242268.42, "sim_minute": 2400, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 210370}
+{"event": "step", "wall_ts": 1794242268.485, "sim_minute": 2415, "events": 225, "ingest_s": 0.025, "decisions_written": 0, "last_event_id": 210595}
+{"event": "step", "wall_ts": 1794242268.544, "sim_minute": 2430, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 210820}
+{"event": "step", "wall_ts": 1794242268.603, "sim_minute": 2445, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 211045}
+{"event": "step", "wall_ts": 1794242268.663, "sim_minute": 2460, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 211270}
+{"event": "step", "wall_ts": 1794242268.723, "sim_minute": 2475, "events": 225, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 211495}
+{"event": "step", "wall_ts": 1794242268.784, "sim_minute": 2490, "events": 225, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 211720}
+{"event": "step", "wall_ts": 1794242268.846, "sim_minute": 2505, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 211945}
+{"event": "step", "wall_ts": 1794242268.904, "sim_minute": 2520, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 212170}
+{"event": "step", "wall_ts": 1794242268.963, "sim_minute": 2535, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 212395}
+{"event": "step", "wall_ts": 1794242269.022, "sim_minute": 2550, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 212620}
+{"event": "step", "wall_ts": 1794242269.081, "sim_minute": 2565, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 212845}
+{"event": "step", "wall_ts": 1794242269.139, "sim_minute": 2580, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 213070}
+{"event": "step", "wall_ts": 1794242269.21, "sim_minute": 2595, "events": 225, "ingest_s": 0.023, "decisions_written": 0, "last_event_id": 213295}
+{"event": "step", "wall_ts": 1794242269.271, "sim_minute": 2610, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 213520}
+{"event": "step", "wall_ts": 1794242269.334, "sim_minute": 2625, "events": 225, "ingest_s": 0.024, "decisions_written": 0, "last_event_id": 213745}
+{"event": "step", "wall_ts": 1794242269.395, "sim_minute": 2640, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 213970}
+{"event": "step", "wall_ts": 1794242269.452, "sim_minute": 2655, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 214145}
+{"event": "step", "wall_ts": 1794242269.518, "sim_minute": 2670, "events": 175, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 214320}
+{"event": "step", "wall_ts": 1794242269.576, "sim_minute": 2685, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 214495}
+{"event": "step", "wall_ts": 1794242269.633, "sim_minute": 2700, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.67, "sim_minute": 2715, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.709, "sim_minute": 2730, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.747, "sim_minute": 2745, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.784, "sim_minute": 2760, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.82, "sim_minute": 2775, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.858, "sim_minute": 2790, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.895, "sim_minute": 2805, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.933, "sim_minute": 2820, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242269.973, "sim_minute": 2835, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.013, "sim_minute": 2850, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.05, "sim_minute": 2865, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.093, "sim_minute": 2880, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.133, "sim_minute": 2895, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.172, "sim_minute": 2910, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.21, "sim_minute": 2925, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.249, "sim_minute": 2940, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.287, "sim_minute": 2955, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.325, "sim_minute": 2970, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.363, "sim_minute": 2985, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.4, "sim_minute": 3000, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.436, "sim_minute": 3015, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.473, "sim_minute": 3030, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.51, "sim_minute": 3045, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.55, "sim_minute": 3060, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.586, "sim_minute": 3075, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.625, "sim_minute": 3090, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.662, "sim_minute": 3105, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.699, "sim_minute": 3120, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.748, "sim_minute": 3135, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.786, "sim_minute": 3150, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.826, "sim_minute": 3165, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.866, "sim_minute": 3180, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.904, "sim_minute": 3195, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.945, "sim_minute": 3210, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242270.983, "sim_minute": 3225, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.019, "sim_minute": 3240, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.056, "sim_minute": 3255, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.093, "sim_minute": 3270, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.13, "sim_minute": 3285, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.169, "sim_minute": 3300, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.213, "sim_minute": 3315, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.254, "sim_minute": 3330, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.292, "sim_minute": 3345, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.33, "sim_minute": 3360, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 214670}
+{"event": "step", "wall_ts": 1794242271.504, "sim_minute": 3375, "events": 3303, "ingest_s": 0.123, "decisions_written": 0, "last_event_id": 217973}
+{"event": "step", "wall_ts": 1794242271.55, "sim_minute": 3390, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 217973}
+{"event": "step", "wall_ts": 1794242271.59, "sim_minute": 3405, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 217973}
+{"event": "step", "wall_ts": 1794242271.653, "sim_minute": 3420, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 217973, "changes": {"experiments:nw_renewal": "queued"}}
+{"event": "step", "wall_ts": 1794242271.723, "sim_minute": 3435, "events": 175, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 218148, "changes": {"experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242271.788, "sim_minute": 3450, "events": 175, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 218323, "changes": {"experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242271.849, "sim_minute": 3465, "events": 175, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 218498, "changes": {"experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242271.921, "sim_minute": 3480, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 218673, "changes": {"experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242271.987, "sim_minute": 3495, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 218898, "changes": {"experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242272.049, "sim_minute": 3510, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 219123, "changes": {"experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242272.115, "sim_minute": 3525, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 219348, "changes": {"experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242272.204, "sim_minute": 3540, "events": 226, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 219574, "changes": {"caller_id_health:ks_cancel": "queued", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242272.267, "sim_minute": 3555, "events": 226, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 219800, "changes": {"caller_id_health:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242272.337, "sim_minute": 3570, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 220025, "changes": {"caller_id_health:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242272.403, "sim_minute": 3585, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 220250, "changes": {"caller_id_health:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242272.482, "sim_minute": 3600, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 220475, "changes": {"caller_id_health:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242272.545, "sim_minute": 3615, "events": 226, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 220701}
+{"event": "step", "wall_ts": 1794242272.612, "sim_minute": 3630, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 220926}
+{"event": "step", "wall_ts": 1794242272.683, "sim_minute": 3645, "events": 225, "ingest_s": 0.026, "decisions_written": 0, "last_event_id": 221151}
+{"event": "step", "wall_ts": 1794242272.746, "sim_minute": 3660, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 221376}
+{"event": "step", "wall_ts": 1794242272.813, "sim_minute": 3675, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 221601}
+{"event": "step", "wall_ts": 1794242272.877, "sim_minute": 3690, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 221826}
+{"event": "step", "wall_ts": 1794242272.937, "sim_minute": 3705, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 222051}
+{"event": "step", "wall_ts": 1794242273.0, "sim_minute": 3720, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 222276}
+{"event": "step", "wall_ts": 1794242273.065, "sim_minute": 3735, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 222501}
+{"event": "step", "wall_ts": 1794242273.128, "sim_minute": 3750, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 222726}
+{"event": "step", "wall_ts": 1794242273.192, "sim_minute": 3765, "events": 225, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 222951}
+{"event": "step", "wall_ts": 1794242273.257, "sim_minute": 3780, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 223176}
+{"event": "step", "wall_ts": 1794242273.324, "sim_minute": 3795, "events": 225, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 223401}
+{"event": "step", "wall_ts": 1794242273.387, "sim_minute": 3810, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 223626}
+{"event": "step", "wall_ts": 1794242273.449, "sim_minute": 3825, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 223851}
+{"event": "step", "wall_ts": 1794242273.51, "sim_minute": 3840, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 224076}
+{"event": "step", "wall_ts": 1794242273.58, "sim_minute": 3855, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 224301}
+{"event": "step", "wall_ts": 1794242273.643, "sim_minute": 3870, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 224526}
+{"event": "step", "wall_ts": 1794242273.707, "sim_minute": 3885, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 224751}
+{"event": "step", "wall_ts": 1794242273.77, "sim_minute": 3900, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 224976}
+{"event": "step", "wall_ts": 1794242273.838, "sim_minute": 3915, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 225201}
+{"event": "step", "wall_ts": 1794242273.902, "sim_minute": 3930, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 225426}
+{"event": "step", "wall_ts": 1794242273.964, "sim_minute": 3945, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 225651}
+{"event": "step", "wall_ts": 1794242274.033, "sim_minute": 3960, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 225876}
+{"event": "step", "wall_ts": 1794242274.106, "sim_minute": 3975, "events": 225, "ingest_s": 0.023, "decisions_written": 0, "last_event_id": 226101}
+{"event": "step", "wall_ts": 1794242274.177, "sim_minute": 3990, "events": 225, "ingest_s": 0.024, "decisions_written": 0, "last_event_id": 226326}
+{"event": "step", "wall_ts": 1794242274.244, "sim_minute": 4005, "events": 225, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 226551}
+{"event": "step", "wall_ts": 1794242274.306, "sim_minute": 4020, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 226776}
+{"event": "step", "wall_ts": 1794242274.369, "sim_minute": 4035, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 227001}
+{"event": "step", "wall_ts": 1794242274.433, "sim_minute": 4050, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 227226}
+{"event": "step", "wall_ts": 1794242274.496, "sim_minute": 4065, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 227451}
+{"event": "step", "wall_ts": 1794242274.559, "sim_minute": 4080, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 227676}
+{"event": "step", "wall_ts": 1794242274.62, "sim_minute": 4095, "events": 175, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 227851}
+{"event": "step", "wall_ts": 1794242274.68, "sim_minute": 4110, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 228026}
+{"event": "step", "wall_ts": 1794242274.744, "sim_minute": 4125, "events": 175, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 228201}
+{"event": "step", "wall_ts": 1794242274.805, "sim_minute": 4140, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242274.861, "sim_minute": 4155, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242274.911, "sim_minute": 4170, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242274.957, "sim_minute": 4185, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242274.999, "sim_minute": 4200, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.042, "sim_minute": 4215, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.083, "sim_minute": 4230, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.123, "sim_minute": 4245, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.163, "sim_minute": 4260, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.205, "sim_minute": 4275, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.255, "sim_minute": 4290, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.301, "sim_minute": 4305, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.362, "sim_minute": 4320, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.413, "sim_minute": 4335, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.461, "sim_minute": 4350, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.506, "sim_minute": 4365, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.55, "sim_minute": 4380, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.601, "sim_minute": 4395, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.647, "sim_minute": 4410, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.689, "sim_minute": 4425, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.732, "sim_minute": 4440, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.774, "sim_minute": 4455, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.818, "sim_minute": 4470, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.861, "sim_minute": 4485, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.901, "sim_minute": 4500, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.941, "sim_minute": 4515, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242275.979, "sim_minute": 4530, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.017, "sim_minute": 4545, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.054, "sim_minute": 4560, "events": 0, "ingest_s": 0.001, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.092, "sim_minute": 4575, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.129, "sim_minute": 4590, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.168, "sim_minute": 4605, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.209, "sim_minute": 4620, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.255, "sim_minute": 4635, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.297, "sim_minute": 4650, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.34, "sim_minute": 4665, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.384, "sim_minute": 4680, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.425, "sim_minute": 4695, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.464, "sim_minute": 4710, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.503, "sim_minute": 4725, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.543, "sim_minute": 4740, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.595, "sim_minute": 4755, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.643, "sim_minute": 4770, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.688, "sim_minute": 4785, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.73, "sim_minute": 4800, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 228376}
+{"event": "step", "wall_ts": 1794242276.905, "sim_minute": 4815, "events": 3303, "ingest_s": 0.12, "decisions_written": 0, "last_event_id": 231679}
+{"event": "step", "wall_ts": 1794242276.947, "sim_minute": 4830, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 231679}
+{"event": "step", "wall_ts": 1794242276.989, "sim_minute": 4845, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 231679}
+{"event": "step", "wall_ts": 1794242277.054, "sim_minute": 4860, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 231679, "changes": {"experiments:ks_cancel": "queued"}}
+{"event": "step", "wall_ts": 1794242277.117, "sim_minute": 4875, "events": 176, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 231855, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242277.179, "sim_minute": 4890, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 232030, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242277.243, "sim_minute": 4905, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 232205, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242277.32, "sim_minute": 4920, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 232380, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242277.386, "sim_minute": 4935, "events": 226, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 232606, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242277.451, "sim_minute": 4950, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 232831, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242277.513, "sim_minute": 4965, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 233056, "changes": {"experiments:ks_cancel": "refreshed"}}
+[crash_test 22:07:57] kill 3: SIGKILL at sim minute 4980 (2027-01-07T11:00:00+05:30)
+{"event": "run_resolved", "wall_ts": 1794242277.736, "run_id": 1, "created": false, "scenario": "public_02_incidents", "resume_from_chunk": 161, "sim_minute": 4980}
+{"event": "history_ingested", "wall_ts": 1794242277.764, "events": 225, "seconds": 0.03}
+{"event": "step", "wall_ts": 1794242277.848, "sim_minute": 4980, "events": 0, "ingest_s": 0.001, "decisions_written": 0, "last_event_id": 233281, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242277.917, "sim_minute": 4995, "events": 226, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 233507, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242277.983, "sim_minute": 5010, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 233732, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242278.053, "sim_minute": 5025, "events": 226, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 233958, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242278.132, "sim_minute": 5040, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 234183, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242278.202, "sim_minute": 5055, "events": 226, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 234409}
+{"event": "step", "wall_ts": 1794242278.268, "sim_minute": 5070, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 234634}
+{"event": "step", "wall_ts": 1794242278.33, "sim_minute": 5085, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 234859}
+{"event": "step", "wall_ts": 1794242278.396, "sim_minute": 5100, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 235084}
+{"event": "step", "wall_ts": 1794242278.463, "sim_minute": 5115, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 235309}
+{"event": "step", "wall_ts": 1794242278.529, "sim_minute": 5130, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 235534}
+{"event": "step", "wall_ts": 1794242278.591, "sim_minute": 5145, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 235759}
+{"event": "step", "wall_ts": 1794242278.655, "sim_minute": 5160, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 235984}
+{"event": "step", "wall_ts": 1794242278.765, "sim_minute": 5175, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 236209, "changes": {"script_health:ks_cancel": "queued"}}
+{"event": "step", "wall_ts": 1794242278.831, "sim_minute": 5190, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 236434, "changes": {"script_health:ks_cancel": "in_flight"}}
+{"event": "step", "wall_ts": 1794242278.897, "sim_minute": 5205, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 236659, "changes": {"script_health:ks_cancel": "in_flight"}}
+{"event": "step", "wall_ts": 1794242278.968, "sim_minute": 5220, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 236884, "changes": {"script_health:ks_cancel": "in_flight"}}
+{"event": "step", "wall_ts": 1794242279.034, "sim_minute": 5235, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 237109, "changes": {"script_health:ks_cancel": "in_flight"}}
+{"event": "step", "wall_ts": 1794242279.099, "sim_minute": 5250, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 237334, "changes": {"script_health:ks_cancel": "in_flight"}}
+{"event": "step", "wall_ts": 1794242279.168, "sim_minute": 5265, "events": 226, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 237560, "changes": {"script_health:ks_cancel": "in_flight"}}
+{"event": "step", "wall_ts": 1794242279.23, "sim_minute": 5280, "events": 226, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 237786}
+{"event": "step", "wall_ts": 1794242279.292, "sim_minute": 5295, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 238011}
+{"event": "step", "wall_ts": 1794242279.354, "sim_minute": 5310, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 238236}
+{"event": "step", "wall_ts": 1794242279.419, "sim_minute": 5325, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 238461}
+{"event": "step", "wall_ts": 1794242279.478, "sim_minute": 5340, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 238686}
+{"event": "step", "wall_ts": 1794242279.539, "sim_minute": 5355, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 238911}
+{"event": "step", "wall_ts": 1794242279.6, "sim_minute": 5370, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 239136}
+{"event": "step", "wall_ts": 1794242279.662, "sim_minute": 5385, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 239361}
+{"event": "step", "wall_ts": 1794242279.728, "sim_minute": 5400, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 239586}
+{"event": "step", "wall_ts": 1794242279.789, "sim_minute": 5415, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 239811}
+{"event": "step", "wall_ts": 1794242279.852, "sim_minute": 5430, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 240036}
+{"event": "step", "wall_ts": 1794242279.913, "sim_minute": 5445, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 240261}
+{"event": "step", "wall_ts": 1794242279.975, "sim_minute": 5460, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 240486}
+{"event": "step", "wall_ts": 1794242280.037, "sim_minute": 5475, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 240711}
+{"event": "step", "wall_ts": 1794242280.1, "sim_minute": 5490, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 240936}
+{"event": "step", "wall_ts": 1794242280.164, "sim_minute": 5505, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 241161}
+{"event": "step", "wall_ts": 1794242280.227, "sim_minute": 5520, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 241386}
+{"event": "step", "wall_ts": 1794242280.287, "sim_minute": 5535, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 241561}
+{"event": "step", "wall_ts": 1794242280.345, "sim_minute": 5550, "events": 175, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 241736}
+{"event": "step", "wall_ts": 1794242280.413, "sim_minute": 5565, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 241911}
+{"event": "step", "wall_ts": 1794242280.472, "sim_minute": 5580, "events": 175, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.515, "sim_minute": 5595, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.558, "sim_minute": 5610, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.601, "sim_minute": 5625, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.644, "sim_minute": 5640, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.686, "sim_minute": 5655, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.729, "sim_minute": 5670, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.77, "sim_minute": 5685, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.811, "sim_minute": 5700, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.852, "sim_minute": 5715, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.894, "sim_minute": 5730, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.936, "sim_minute": 5745, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242280.984, "sim_minute": 5760, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.027, "sim_minute": 5775, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.073, "sim_minute": 5790, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.115, "sim_minute": 5805, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.157, "sim_minute": 5820, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.198, "sim_minute": 5835, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.24, "sim_minute": 5850, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.281, "sim_minute": 5865, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.324, "sim_minute": 5880, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.367, "sim_minute": 5895, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.411, "sim_minute": 5910, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.453, "sim_minute": 5925, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.493, "sim_minute": 5940, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.536, "sim_minute": 5955, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.577, "sim_minute": 5970, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.618, "sim_minute": 5985, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.659, "sim_minute": 6000, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.704, "sim_minute": 6015, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.752, "sim_minute": 6030, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.797, "sim_minute": 6045, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242281.841, "sim_minute": 6060, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+[crash_test 22:08:01] kill 4: SIGKILL at sim minute 6075 (2027-01-08T05:15:00+05:30)
+{"event": "run_resolved", "wall_ts": 1794242282.059, "run_id": 1, "created": false, "scenario": "public_02_incidents", "resume_from_chunk": 202, "sim_minute": 6075}
+{"event": "history_ingested", "wall_ts": 1794242282.062, "events": 0, "seconds": 0.0}
+{"event": "step", "wall_ts": 1794242282.135, "sim_minute": 6075, "events": 0, "ingest_s": 0.001, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.186, "sim_minute": 6090, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.23, "sim_minute": 6105, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.271, "sim_minute": 6120, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.313, "sim_minute": 6135, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.357, "sim_minute": 6150, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.4, "sim_minute": 6165, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.442, "sim_minute": 6180, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.485, "sim_minute": 6195, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.526, "sim_minute": 6210, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.569, "sim_minute": 6225, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.612, "sim_minute": 6240, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 242086}
+{"event": "step", "wall_ts": 1794242282.798, "sim_minute": 6255, "events": 3303, "ingest_s": 0.126, "decisions_written": 0, "last_event_id": 245389}
+{"event": "step", "wall_ts": 1794242282.845, "sim_minute": 6270, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 245389}
+{"event": "step", "wall_ts": 1794242282.888, "sim_minute": 6285, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 245389}
+{"event": "step", "wall_ts": 1794242282.956, "sim_minute": 6300, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 245389, "changes": {"experiments:ks_cancel": "queued"}}
+{"event": "step", "wall_ts": 1794242283.02, "sim_minute": 6315, "events": 176, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 245565, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.082, "sim_minute": 6330, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 245740, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.144, "sim_minute": 6345, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 245915, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.224, "sim_minute": 6360, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 246090, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.289, "sim_minute": 6375, "events": 226, "ingest_s": 0.022, "decisions_written": 0, "last_event_id": 246316, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.357, "sim_minute": 6390, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 246541, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.424, "sim_minute": 6405, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 246766, "changes": {"experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.512, "sim_minute": 6420, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 246991, "changes": {"caller_id_health:nw_kyc": "queued", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.579, "sim_minute": 6435, "events": 226, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 247217, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.651, "sim_minute": 6450, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 247442, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.718, "sim_minute": 6465, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 247667, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.809, "sim_minute": 6480, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 247892, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:ks_cancel": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.873, "sim_minute": 6495, "events": 226, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 248118, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.935, "sim_minute": 6510, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 248343, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242283.997, "sim_minute": 6525, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 248568, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.061, "sim_minute": 6540, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 248793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.122, "sim_minute": 6555, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 249018, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.184, "sim_minute": 6570, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 249243, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.251, "sim_minute": 6585, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 249468, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.318, "sim_minute": 6600, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 249693, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.381, "sim_minute": 6615, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 249918, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.444, "sim_minute": 6630, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 250143, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.507, "sim_minute": 6645, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 250368, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.573, "sim_minute": 6660, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 250593, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.638, "sim_minute": 6675, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 250818, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.7, "sim_minute": 6690, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 251043, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.766, "sim_minute": 6705, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 251268, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.83, "sim_minute": 6720, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 251493, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.891, "sim_minute": 6735, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 251718, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242284.954, "sim_minute": 6750, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 251943, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.169, "sim_minute": 6765, "events": 225, "ingest_s": 0.081, "decisions_written": 0, "last_event_id": 252168, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.235, "sim_minute": 6780, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 252393, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.299, "sim_minute": 6795, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 252618, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.363, "sim_minute": 6810, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 252843, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.426, "sim_minute": 6825, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 253068, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.49, "sim_minute": 6840, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 253293, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.558, "sim_minute": 6855, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 253518, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.622, "sim_minute": 6870, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 253743, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.686, "sim_minute": 6885, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 253968, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.751, "sim_minute": 6900, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 254193, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.826, "sim_minute": 6915, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 254418, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.889, "sim_minute": 6930, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 254643, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242285.951, "sim_minute": 6945, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 254868, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.015, "sim_minute": 6960, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 255093, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.076, "sim_minute": 6975, "events": 175, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 255268, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.14, "sim_minute": 6990, "events": 175, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 255443, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.203, "sim_minute": 7005, "events": 175, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 255618, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.268, "sim_minute": 7020, "events": 175, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.312, "sim_minute": 7035, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.355, "sim_minute": 7050, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.4, "sim_minute": 7065, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.447, "sim_minute": 7080, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.489, "sim_minute": 7095, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.534, "sim_minute": 7110, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.577, "sim_minute": 7125, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.622, "sim_minute": 7140, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.666, "sim_minute": 7155, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.709, "sim_minute": 7170, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.752, "sim_minute": 7185, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.808, "sim_minute": 7200, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.853, "sim_minute": 7215, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.896, "sim_minute": 7230, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.939, "sim_minute": 7245, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242286.984, "sim_minute": 7260, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.028, "sim_minute": 7275, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.073, "sim_minute": 7290, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.117, "sim_minute": 7305, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.164, "sim_minute": 7320, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.208, "sim_minute": 7335, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.253, "sim_minute": 7350, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.298, "sim_minute": 7365, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.345, "sim_minute": 7380, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.392, "sim_minute": 7395, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.442, "sim_minute": 7410, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.489, "sim_minute": 7425, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.536, "sim_minute": 7440, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.582, "sim_minute": 7455, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.627, "sim_minute": 7470, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.671, "sim_minute": 7485, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.719, "sim_minute": 7500, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.764, "sim_minute": 7515, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.81, "sim_minute": 7530, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.861, "sim_minute": 7545, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.911, "sim_minute": 7560, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242287.957, "sim_minute": 7575, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.001, "sim_minute": 7590, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.048, "sim_minute": 7605, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.096, "sim_minute": 7620, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.141, "sim_minute": 7635, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.186, "sim_minute": 7650, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.23, "sim_minute": 7665, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.277, "sim_minute": 7680, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 255793, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.46, "sim_minute": 7695, "events": 3303, "ingest_s": 0.125, "decisions_written": 0, "last_event_id": 259096, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.505, "sim_minute": 7710, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 259096, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.55, "sim_minute": 7725, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 259096, "changes": {"caller_id_health:nw_kyc": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.615, "sim_minute": 7740, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 259096, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "queued"}}
+{"event": "step", "wall_ts": 1794242288.68, "sim_minute": 7755, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 259271, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.741, "sim_minute": 7770, "events": 175, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 259446, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.801, "sim_minute": 7785, "events": 175, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 259621, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.886, "sim_minute": 7800, "events": 175, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 259796, "changes": {"caller_id_health:nw_kyc": "refreshed", "experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242288.949, "sim_minute": 7815, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 260021, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.012, "sim_minute": 7830, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 260246, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.078, "sim_minute": 7845, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 260471, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.15, "sim_minute": 7860, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 260696, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.213, "sim_minute": 7875, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 260921, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.276, "sim_minute": 7890, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 261146, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.348, "sim_minute": 7905, "events": 226, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 261372, "changes": {"caller_id_health:nw_kyc": "in_flight", "experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.41, "sim_minute": 7920, "events": 226, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 261598, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.471, "sim_minute": 7935, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 261823, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.53, "sim_minute": 7950, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 262048, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.59, "sim_minute": 7965, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 262273, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.65, "sim_minute": 7980, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 262498, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.71, "sim_minute": 7995, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 262723, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.768, "sim_minute": 8010, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 262948, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.829, "sim_minute": 8025, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 263173, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.907, "sim_minute": 8040, "events": 226, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 263399, "changes": {"caller_id_health:nw_kyc": "in_flight"}}
+{"event": "step", "wall_ts": 1794242289.966, "sim_minute": 8055, "events": 226, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 263625}
+{"event": "step", "wall_ts": 1794242290.021, "sim_minute": 8070, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 263850}
+{"event": "step", "wall_ts": 1794242290.078, "sim_minute": 8085, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 264075}
+{"event": "step", "wall_ts": 1794242290.135, "sim_minute": 8100, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 264300}
+{"event": "step", "wall_ts": 1794242290.198, "sim_minute": 8115, "events": 226, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 264526}
+{"event": "step", "wall_ts": 1794242290.254, "sim_minute": 8130, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 264751}
+{"event": "step", "wall_ts": 1794242290.309, "sim_minute": 8145, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 264976}
+{"event": "step", "wall_ts": 1794242290.367, "sim_minute": 8160, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 265201}
+{"event": "step", "wall_ts": 1794242290.425, "sim_minute": 8175, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 265426}
+{"event": "step", "wall_ts": 1794242290.482, "sim_minute": 8190, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 265651}
+{"event": "step", "wall_ts": 1794242290.538, "sim_minute": 8205, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 265876}
+{"event": "step", "wall_ts": 1794242290.595, "sim_minute": 8220, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 266101}
+{"event": "step", "wall_ts": 1794242290.652, "sim_minute": 8235, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 266326}
+{"event": "step", "wall_ts": 1794242290.713, "sim_minute": 8250, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 266551}
+{"event": "step", "wall_ts": 1794242290.775, "sim_minute": 8265, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 266776}
+{"event": "step", "wall_ts": 1794242290.833, "sim_minute": 8280, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 267001}
+{"event": "step", "wall_ts": 1794242290.892, "sim_minute": 8295, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 267226}
+{"event": "step", "wall_ts": 1794242290.95, "sim_minute": 8310, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 267451}
+{"event": "step", "wall_ts": 1794242291.01, "sim_minute": 8325, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 267676}
+{"event": "step", "wall_ts": 1794242291.068, "sim_minute": 8340, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 267901}
+{"event": "step", "wall_ts": 1794242291.127, "sim_minute": 8355, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 268126}
+{"event": "step", "wall_ts": 1794242291.185, "sim_minute": 8370, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 268351}
+{"event": "step", "wall_ts": 1794242291.244, "sim_minute": 8385, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 268576}
+{"event": "step", "wall_ts": 1794242291.301, "sim_minute": 8400, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 268801}
+{"event": "step", "wall_ts": 1794242291.354, "sim_minute": 8415, "events": 175, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 268976}
+{"event": "step", "wall_ts": 1794242291.407, "sim_minute": 8430, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 269151}
+{"event": "step", "wall_ts": 1794242291.465, "sim_minute": 8445, "events": 175, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 269326}
+{"event": "step", "wall_ts": 1794242291.519, "sim_minute": 8460, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.561, "sim_minute": 8475, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.601, "sim_minute": 8490, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.641, "sim_minute": 8505, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.679, "sim_minute": 8520, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.716, "sim_minute": 8535, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.755, "sim_minute": 8550, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.795, "sim_minute": 8565, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.838, "sim_minute": 8580, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.88, "sim_minute": 8595, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.924, "sim_minute": 8610, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242291.964, "sim_minute": 8625, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.015, "sim_minute": 8640, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.059, "sim_minute": 8655, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.1, "sim_minute": 8670, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.139, "sim_minute": 8685, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.18, "sim_minute": 8700, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.218, "sim_minute": 8715, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.259, "sim_minute": 8730, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.298, "sim_minute": 8745, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.335, "sim_minute": 8760, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.374, "sim_minute": 8775, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.413, "sim_minute": 8790, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.451, "sim_minute": 8805, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.489, "sim_minute": 8820, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.528, "sim_minute": 8835, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.566, "sim_minute": 8850, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.604, "sim_minute": 8865, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.645, "sim_minute": 8880, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.685, "sim_minute": 8895, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.723, "sim_minute": 8910, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.761, "sim_minute": 8925, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.8, "sim_minute": 8940, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.838, "sim_minute": 8955, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.877, "sim_minute": 8970, "events": 0, "ingest_s": 0.003, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.917, "sim_minute": 8985, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.954, "sim_minute": 9000, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242292.993, "sim_minute": 9015, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242293.031, "sim_minute": 9030, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242293.069, "sim_minute": 9045, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242293.107, "sim_minute": 9060, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242293.145, "sim_minute": 9075, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242293.183, "sim_minute": 9090, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242293.222, "sim_minute": 9105, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242293.26, "sim_minute": 9120, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 269501}
+{"event": "step", "wall_ts": 1794242293.433, "sim_minute": 9135, "events": 3303, "ingest_s": 0.119, "decisions_written": 0, "last_event_id": 272804}
+{"event": "step", "wall_ts": 1794242293.475, "sim_minute": 9150, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 272804}
+{"event": "step", "wall_ts": 1794242293.515, "sim_minute": 9165, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 272804}
+{"event": "step", "wall_ts": 1794242293.569, "sim_minute": 9180, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 272804, "changes": {"experiments:nw_renewal": "queued"}}
+{"event": "step", "wall_ts": 1794242293.626, "sim_minute": 9195, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 272979, "changes": {"experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242293.684, "sim_minute": 9210, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 273154, "changes": {"experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242293.74, "sim_minute": 9225, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 273329, "changes": {"experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242293.81, "sim_minute": 9240, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 273504, "changes": {"experiments:nw_renewal": "refreshed"}}
+{"event": "step", "wall_ts": 1794242293.872, "sim_minute": 9255, "events": 225, "ingest_s": 0.021, "decisions_written": 0, "last_event_id": 273729, "changes": {"experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242293.934, "sim_minute": 9270, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 273954, "changes": {"experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242293.995, "sim_minute": 9285, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 274179, "changes": {"experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242294.063, "sim_minute": 9300, "events": 226, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 274405, "changes": {"experiments:nw_renewal": "in_flight"}}
+{"event": "step", "wall_ts": 1794242294.118, "sim_minute": 9315, "events": 226, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 274631}
+{"event": "step", "wall_ts": 1794242294.171, "sim_minute": 9330, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 274856}
+{"event": "step", "wall_ts": 1794242294.225, "sim_minute": 9345, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 275081}
+{"event": "step", "wall_ts": 1794242294.278, "sim_minute": 9360, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 275306}
+{"event": "step", "wall_ts": 1794242294.334, "sim_minute": 9375, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 275531}
+{"event": "step", "wall_ts": 1794242294.386, "sim_minute": 9390, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 275756}
+{"event": "step", "wall_ts": 1794242294.439, "sim_minute": 9405, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 275981}
+{"event": "step", "wall_ts": 1794242294.493, "sim_minute": 9420, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 276206}
+{"event": "step", "wall_ts": 1794242294.547, "sim_minute": 9435, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 276431}
+{"event": "step", "wall_ts": 1794242294.601, "sim_minute": 9450, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 276656}
+{"event": "step", "wall_ts": 1794242294.653, "sim_minute": 9465, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 276881}
+{"event": "step", "wall_ts": 1794242294.709, "sim_minute": 9480, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 277106}
+{"event": "step", "wall_ts": 1794242294.763, "sim_minute": 9495, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 277331}
+{"event": "step", "wall_ts": 1794242294.815, "sim_minute": 9510, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 277556}
+{"event": "step", "wall_ts": 1794242294.868, "sim_minute": 9525, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 277781}
+{"event": "step", "wall_ts": 1794242294.921, "sim_minute": 9540, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 278006}
+{"event": "step", "wall_ts": 1794242294.977, "sim_minute": 9555, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 278231}
+{"event": "step", "wall_ts": 1794242295.031, "sim_minute": 9570, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 278456}
+{"event": "step", "wall_ts": 1794242295.086, "sim_minute": 9585, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 278681}
+{"event": "step", "wall_ts": 1794242295.142, "sim_minute": 9600, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 278906}
+{"event": "step", "wall_ts": 1794242295.195, "sim_minute": 9615, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 279131}
+{"event": "step", "wall_ts": 1794242295.25, "sim_minute": 9630, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 279356}
+{"event": "step", "wall_ts": 1794242295.307, "sim_minute": 9645, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 279581}
+{"event": "step", "wall_ts": 1794242295.36, "sim_minute": 9660, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 279806}
+{"event": "step", "wall_ts": 1794242295.414, "sim_minute": 9675, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 280031}
+{"event": "step", "wall_ts": 1794242295.469, "sim_minute": 9690, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 280256}
+{"event": "step", "wall_ts": 1794242295.524, "sim_minute": 9705, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 280481}
+{"event": "step", "wall_ts": 1794242295.58, "sim_minute": 9720, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 280706}
+{"event": "step", "wall_ts": 1794242295.637, "sim_minute": 9735, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 280931}
+{"event": "step", "wall_ts": 1794242295.691, "sim_minute": 9750, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 281156}
+{"event": "step", "wall_ts": 1794242295.744, "sim_minute": 9765, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 281381}
+{"event": "step", "wall_ts": 1794242295.796, "sim_minute": 9780, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 281606}
+{"event": "step", "wall_ts": 1794242295.857, "sim_minute": 9795, "events": 225, "ingest_s": 0.02, "decisions_written": 0, "last_event_id": 281831}
+{"event": "step", "wall_ts": 1794242295.91, "sim_minute": 9810, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 282056}
+{"event": "step", "wall_ts": 1794242295.966, "sim_minute": 9825, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 282281}
+{"event": "step", "wall_ts": 1794242296.022, "sim_minute": 9840, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 282506}
+{"event": "step", "wall_ts": 1794242296.073, "sim_minute": 9855, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 282681}
+{"event": "step", "wall_ts": 1794242296.123, "sim_minute": 9870, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 282856}
+{"event": "step", "wall_ts": 1794242296.172, "sim_minute": 9885, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 283031}
+{"event": "step", "wall_ts": 1794242296.221, "sim_minute": 9900, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.256, "sim_minute": 9915, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.29, "sim_minute": 9930, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.327, "sim_minute": 9945, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.364, "sim_minute": 9960, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.399, "sim_minute": 9975, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.436, "sim_minute": 9990, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+[crash_test 22:08:16] kill 5: SIGKILL at sim minute 10005 (2027-01-10T22:45:00+05:30)
+[crash_test 22:08:16] final restart, running to completion
+{"event": "run_resolved", "wall_ts": 1794242296.672, "run_id": 1, "created": false, "scenario": "public_02_incidents", "resume_from_chunk": 349, "sim_minute": 10005}
+{"event": "history_ingested", "wall_ts": 1794242296.675, "events": 0, "seconds": 0.0}
+{"event": "step", "wall_ts": 1794242296.752, "sim_minute": 10005, "events": 0, "ingest_s": 0.001, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.793, "sim_minute": 10020, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.83, "sim_minute": 10035, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.868, "sim_minute": 10050, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.903, "sim_minute": 10065, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.95, "sim_minute": 10080, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242296.986, "sim_minute": 10095, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.022, "sim_minute": 10110, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.06, "sim_minute": 10125, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.096, "sim_minute": 10140, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.133, "sim_minute": 10155, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.169, "sim_minute": 10170, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.205, "sim_minute": 10185, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.242, "sim_minute": 10200, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.277, "sim_minute": 10215, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.314, "sim_minute": 10230, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.349, "sim_minute": 10245, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.386, "sim_minute": 10260, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.423, "sim_minute": 10275, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.459, "sim_minute": 10290, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.497, "sim_minute": 10305, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.534, "sim_minute": 10320, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.571, "sim_minute": 10335, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.607, "sim_minute": 10350, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.644, "sim_minute": 10365, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.681, "sim_minute": 10380, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.717, "sim_minute": 10395, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.753, "sim_minute": 10410, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.79, "sim_minute": 10425, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.825, "sim_minute": 10440, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.863, "sim_minute": 10455, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.905, "sim_minute": 10470, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.944, "sim_minute": 10485, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242297.981, "sim_minute": 10500, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242298.023, "sim_minute": 10515, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242298.063, "sim_minute": 10530, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242298.102, "sim_minute": 10545, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242298.139, "sim_minute": 10560, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 283206}
+{"event": "step", "wall_ts": 1794242298.337, "sim_minute": 10575, "events": 3303, "ingest_s": 0.133, "decisions_written": 0, "last_event_id": 286509}
+{"event": "step", "wall_ts": 1794242298.379, "sim_minute": 10590, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 286509}
+{"event": "step", "wall_ts": 1794242298.417, "sim_minute": 10605, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 286509}
+{"event": "step", "wall_ts": 1794242298.456, "sim_minute": 10620, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 286509}
+{"event": "step", "wall_ts": 1794242298.509, "sim_minute": 10635, "events": 175, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 286684}
+{"event": "step", "wall_ts": 1794242298.563, "sim_minute": 10650, "events": 175, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 286859}
+{"event": "step", "wall_ts": 1794242298.615, "sim_minute": 10665, "events": 175, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 287034}
+{"event": "step", "wall_ts": 1794242298.667, "sim_minute": 10680, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 287209}
+{"event": "step", "wall_ts": 1794242298.723, "sim_minute": 10695, "events": 225, "ingest_s": 0.019, "decisions_written": 0, "last_event_id": 287434}
+{"event": "step", "wall_ts": 1794242298.776, "sim_minute": 10710, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 287659}
+{"event": "step", "wall_ts": 1794242298.831, "sim_minute": 10725, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 287884}
+{"event": "step", "wall_ts": 1794242298.888, "sim_minute": 10740, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 288109}
+{"event": "step", "wall_ts": 1794242298.942, "sim_minute": 10755, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 288334}
+{"event": "step", "wall_ts": 1794242298.996, "sim_minute": 10770, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 288559}
+{"event": "step", "wall_ts": 1794242299.05, "sim_minute": 10785, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 288784}
+{"event": "step", "wall_ts": 1794242299.102, "sim_minute": 10800, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 289009}
+{"event": "step", "wall_ts": 1794242299.154, "sim_minute": 10815, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 289234}
+{"event": "step", "wall_ts": 1794242299.207, "sim_minute": 10830, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 289459}
+{"event": "step", "wall_ts": 1794242299.259, "sim_minute": 10845, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 289684}
+{"event": "step", "wall_ts": 1794242299.312, "sim_minute": 10860, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 289909}
+{"event": "step", "wall_ts": 1794242299.365, "sim_minute": 10875, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 290134}
+{"event": "step", "wall_ts": 1794242299.421, "sim_minute": 10890, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 290359}
+{"event": "step", "wall_ts": 1794242299.474, "sim_minute": 10905, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 290584}
+{"event": "step", "wall_ts": 1794242299.531, "sim_minute": 10920, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 290809}
+{"event": "step", "wall_ts": 1794242299.583, "sim_minute": 10935, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 291034}
+{"event": "step", "wall_ts": 1794242299.637, "sim_minute": 10950, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 291259}
+{"event": "step", "wall_ts": 1794242299.689, "sim_minute": 10965, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 291484}
+{"event": "step", "wall_ts": 1794242299.747, "sim_minute": 10980, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 291709}
+{"event": "step", "wall_ts": 1794242299.8, "sim_minute": 10995, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 291934}
+{"event": "step", "wall_ts": 1794242299.854, "sim_minute": 11010, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 292159}
+{"event": "step", "wall_ts": 1794242299.906, "sim_minute": 11025, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 292384}
+{"event": "step", "wall_ts": 1794242299.958, "sim_minute": 11040, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 292609}
+{"event": "step", "wall_ts": 1794242300.011, "sim_minute": 11055, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 292834}
+{"event": "step", "wall_ts": 1794242300.072, "sim_minute": 11070, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 293059}
+{"event": "step", "wall_ts": 1794242300.124, "sim_minute": 11085, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 293284}
+{"event": "step", "wall_ts": 1794242300.177, "sim_minute": 11100, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 293509}
+{"event": "step", "wall_ts": 1794242300.23, "sim_minute": 11115, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 293734}
+{"event": "step", "wall_ts": 1794242300.281, "sim_minute": 11130, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 293959}
+{"event": "step", "wall_ts": 1794242300.423, "sim_minute": 11145, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 294184}
+{"event": "step", "wall_ts": 1794242300.852, "sim_minute": 11160, "events": 225, "ingest_s": 0.068, "decisions_written": 0, "last_event_id": 294409}
+{"event": "step", "wall_ts": 1794242300.911, "sim_minute": 11175, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 294634}
+{"event": "step", "wall_ts": 1794242300.964, "sim_minute": 11190, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 294859}
+{"event": "step", "wall_ts": 1794242301.017, "sim_minute": 11205, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 295084}
+{"event": "step", "wall_ts": 1794242301.072, "sim_minute": 11220, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 295309}
+{"event": "step", "wall_ts": 1794242301.124, "sim_minute": 11235, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 295534}
+{"event": "step", "wall_ts": 1794242301.18, "sim_minute": 11250, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 295759}
+{"event": "step", "wall_ts": 1794242301.232, "sim_minute": 11265, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 295984}
+{"event": "step", "wall_ts": 1794242301.286, "sim_minute": 11280, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 296209}
+{"event": "step", "wall_ts": 1794242301.335, "sim_minute": 11295, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 296384}
+{"event": "step", "wall_ts": 1794242301.385, "sim_minute": 11310, "events": 175, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 296559}
+{"event": "step", "wall_ts": 1794242301.441, "sim_minute": 11325, "events": 175, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 296734}
+{"event": "step", "wall_ts": 1794242301.492, "sim_minute": 11340, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.528, "sim_minute": 11355, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.563, "sim_minute": 11370, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.6, "sim_minute": 11385, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.636, "sim_minute": 11400, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.671, "sim_minute": 11415, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.704, "sim_minute": 11430, "events": 0, "ingest_s": 0.001, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.741, "sim_minute": 11445, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.776, "sim_minute": 11460, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.813, "sim_minute": 11475, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.853, "sim_minute": 11490, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.892, "sim_minute": 11505, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.941, "sim_minute": 11520, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242301.977, "sim_minute": 11535, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.014, "sim_minute": 11550, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.05, "sim_minute": 11565, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.093, "sim_minute": 11580, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.131, "sim_minute": 11595, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.17, "sim_minute": 11610, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.207, "sim_minute": 11625, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.246, "sim_minute": 11640, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.282, "sim_minute": 11655, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.317, "sim_minute": 11670, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.354, "sim_minute": 11685, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.392, "sim_minute": 11700, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.429, "sim_minute": 11715, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.467, "sim_minute": 11730, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.506, "sim_minute": 11745, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.543, "sim_minute": 11760, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.582, "sim_minute": 11775, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.641, "sim_minute": 11790, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.683, "sim_minute": 11805, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.721, "sim_minute": 11820, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.758, "sim_minute": 11835, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.797, "sim_minute": 11850, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.833, "sim_minute": 11865, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.871, "sim_minute": 11880, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.908, "sim_minute": 11895, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.946, "sim_minute": 11910, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242302.983, "sim_minute": 11925, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242303.021, "sim_minute": 11940, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242303.06, "sim_minute": 11955, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242303.1, "sim_minute": 11970, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242303.136, "sim_minute": 11985, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242303.174, "sim_minute": 12000, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 296909}
+{"event": "step", "wall_ts": 1794242303.349, "sim_minute": 12015, "events": 3303, "ingest_s": 0.118, "decisions_written": 0, "last_event_id": 300212}
+{"event": "step", "wall_ts": 1794242303.392, "sim_minute": 12030, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 300212}
+{"event": "step", "wall_ts": 1794242303.433, "sim_minute": 12045, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 300212}
+{"event": "step", "wall_ts": 1794242303.472, "sim_minute": 12060, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 300212}
+{"event": "step", "wall_ts": 1794242303.524, "sim_minute": 12075, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 300387}
+{"event": "step", "wall_ts": 1794242303.576, "sim_minute": 12090, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 300562}
+{"event": "step", "wall_ts": 1794242303.627, "sim_minute": 12105, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 300737}
+{"event": "step", "wall_ts": 1794242303.679, "sim_minute": 12120, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 300912}
+{"event": "step", "wall_ts": 1794242303.73, "sim_minute": 12135, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 301137}
+{"event": "step", "wall_ts": 1794242303.782, "sim_minute": 12150, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 301362}
+{"event": "step", "wall_ts": 1794242303.835, "sim_minute": 12165, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 301587}
+{"event": "step", "wall_ts": 1794242303.891, "sim_minute": 12180, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 301812}
+{"event": "step", "wall_ts": 1794242303.95, "sim_minute": 12195, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 302037}
+{"event": "step", "wall_ts": 1794242304.003, "sim_minute": 12210, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 302262}
+{"event": "step", "wall_ts": 1794242304.058, "sim_minute": 12225, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 302487}
+{"event": "step", "wall_ts": 1794242304.114, "sim_minute": 12240, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 302712}
+{"event": "step", "wall_ts": 1794242304.172, "sim_minute": 12255, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 302937}
+{"event": "step", "wall_ts": 1794242304.227, "sim_minute": 12270, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 303162}
+{"event": "step", "wall_ts": 1794242304.281, "sim_minute": 12285, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 303387}
+{"event": "step", "wall_ts": 1794242304.341, "sim_minute": 12300, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 303612}
+{"event": "step", "wall_ts": 1794242304.396, "sim_minute": 12315, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 303837}
+{"event": "step", "wall_ts": 1794242304.451, "sim_minute": 12330, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 304062}
+{"event": "step", "wall_ts": 1794242304.504, "sim_minute": 12345, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 304287}
+{"event": "step", "wall_ts": 1794242304.561, "sim_minute": 12360, "events": 225, "ingest_s": 0.018, "decisions_written": 0, "last_event_id": 304512}
+{"event": "step", "wall_ts": 1794242304.614, "sim_minute": 12375, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 304737}
+{"event": "step", "wall_ts": 1794242304.665, "sim_minute": 12390, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 304962}
+{"event": "step", "wall_ts": 1794242304.719, "sim_minute": 12405, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 305187}
+{"event": "step", "wall_ts": 1794242304.773, "sim_minute": 12420, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 305412}
+{"event": "step", "wall_ts": 1794242304.828, "sim_minute": 12435, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 305637}
+{"event": "step", "wall_ts": 1794242304.88, "sim_minute": 12450, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 305862}
+{"event": "step", "wall_ts": 1794242304.932, "sim_minute": 12465, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 306087}
+{"event": "step", "wall_ts": 1794242304.983, "sim_minute": 12480, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 306312}
+{"event": "step", "wall_ts": 1794242305.037, "sim_minute": 12495, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 306537}
+{"event": "step", "wall_ts": 1794242305.091, "sim_minute": 12510, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 306762}
+{"event": "step", "wall_ts": 1794242305.144, "sim_minute": 12525, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 306987}
+{"event": "step", "wall_ts": 1794242305.199, "sim_minute": 12540, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 307212}
+{"event": "step", "wall_ts": 1794242305.253, "sim_minute": 12555, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 307437}
+{"event": "step", "wall_ts": 1794242305.306, "sim_minute": 12570, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 307662}
+{"event": "step", "wall_ts": 1794242305.36, "sim_minute": 12585, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 307887}
+{"event": "step", "wall_ts": 1794242305.412, "sim_minute": 12600, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 308112}
+{"event": "step", "wall_ts": 1794242305.467, "sim_minute": 12615, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 308337}
+{"event": "step", "wall_ts": 1794242305.52, "sim_minute": 12630, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 308562}
+{"event": "step", "wall_ts": 1794242305.574, "sim_minute": 12645, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 308787}
+{"event": "step", "wall_ts": 1794242305.627, "sim_minute": 12660, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 309012}
+{"event": "step", "wall_ts": 1794242305.683, "sim_minute": 12675, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 309237}
+{"event": "step", "wall_ts": 1794242305.738, "sim_minute": 12690, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 309462}
+{"event": "step", "wall_ts": 1794242305.791, "sim_minute": 12705, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 309687}
+{"event": "step", "wall_ts": 1794242305.844, "sim_minute": 12720, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 309912}
+{"event": "step", "wall_ts": 1794242305.894, "sim_minute": 12735, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 310087}
+{"event": "step", "wall_ts": 1794242305.943, "sim_minute": 12750, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 310262}
+{"event": "step", "wall_ts": 1794242305.994, "sim_minute": 12765, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 310437}
+{"event": "step", "wall_ts": 1794242306.044, "sim_minute": 12780, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.08, "sim_minute": 12795, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.117, "sim_minute": 12810, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.162, "sim_minute": 12825, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.201, "sim_minute": 12840, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.239, "sim_minute": 12855, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.275, "sim_minute": 12870, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.312, "sim_minute": 12885, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.348, "sim_minute": 12900, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.384, "sim_minute": 12915, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.421, "sim_minute": 12930, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.456, "sim_minute": 12945, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.502, "sim_minute": 12960, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.54, "sim_minute": 12975, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.576, "sim_minute": 12990, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.612, "sim_minute": 13005, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.649, "sim_minute": 13020, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.684, "sim_minute": 13035, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.723, "sim_minute": 13050, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.758, "sim_minute": 13065, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.794, "sim_minute": 13080, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.829, "sim_minute": 13095, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.866, "sim_minute": 13110, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.902, "sim_minute": 13125, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.941, "sim_minute": 13140, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242306.98, "sim_minute": 13155, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.017, "sim_minute": 13170, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.056, "sim_minute": 13185, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.095, "sim_minute": 13200, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.132, "sim_minute": 13215, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.171, "sim_minute": 13230, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.208, "sim_minute": 13245, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.245, "sim_minute": 13260, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.281, "sim_minute": 13275, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.316, "sim_minute": 13290, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.352, "sim_minute": 13305, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.388, "sim_minute": 13320, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.424, "sim_minute": 13335, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.461, "sim_minute": 13350, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.496, "sim_minute": 13365, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.533, "sim_minute": 13380, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.572, "sim_minute": 13395, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.614, "sim_minute": 13410, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.654, "sim_minute": 13425, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.694, "sim_minute": 13440, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 310612}
+{"event": "step", "wall_ts": 1794242307.863, "sim_minute": 13455, "events": 3303, "ingest_s": 0.117, "decisions_written": 0, "last_event_id": 313915}
+{"event": "step", "wall_ts": 1794242307.9, "sim_minute": 13470, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 313915}
+{"event": "step", "wall_ts": 1794242307.941, "sim_minute": 13485, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 313915}
+{"event": "step", "wall_ts": 1794242307.979, "sim_minute": 13500, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 313915}
+{"event": "step", "wall_ts": 1794242308.031, "sim_minute": 13515, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 314090}
+{"event": "step", "wall_ts": 1794242308.082, "sim_minute": 13530, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 314265}
+{"event": "step", "wall_ts": 1794242308.133, "sim_minute": 13545, "events": 175, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 314440}
+{"event": "step", "wall_ts": 1794242308.19, "sim_minute": 13560, "events": 175, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 314615}
+{"event": "step", "wall_ts": 1794242308.246, "sim_minute": 13575, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 314840}
+{"event": "step", "wall_ts": 1794242308.3, "sim_minute": 13590, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 315065}
+{"event": "step", "wall_ts": 1794242308.354, "sim_minute": 13605, "events": 225, "ingest_s": 0.016, "decisions_written": 0, "last_event_id": 315290}
+{"event": "step", "wall_ts": 1794242308.407, "sim_minute": 13620, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 315515}
+{"event": "step", "wall_ts": 1794242308.462, "sim_minute": 13635, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 315740}
+{"event": "step", "wall_ts": 1794242308.514, "sim_minute": 13650, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 315965}
+{"event": "step", "wall_ts": 1794242308.568, "sim_minute": 13665, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 316190}
+{"event": "step", "wall_ts": 1794242308.621, "sim_minute": 13680, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 316415}
+{"event": "step", "wall_ts": 1794242308.674, "sim_minute": 13695, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 316640}
+{"event": "step", "wall_ts": 1794242308.729, "sim_minute": 13710, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 316865}
+{"event": "step", "wall_ts": 1794242308.783, "sim_minute": 13725, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 317090}
+{"event": "step", "wall_ts": 1794242308.835, "sim_minute": 13740, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 317315}
+{"event": "step", "wall_ts": 1794242308.886, "sim_minute": 13755, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 317540}
+{"event": "step", "wall_ts": 1794242308.936, "sim_minute": 13770, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 317765}
+{"event": "step", "wall_ts": 1794242308.988, "sim_minute": 13785, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 317990}
+{"event": "step", "wall_ts": 1794242309.041, "sim_minute": 13800, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 318215}
+{"event": "step", "wall_ts": 1794242309.094, "sim_minute": 13815, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 318440}
+{"event": "step", "wall_ts": 1794242309.147, "sim_minute": 13830, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 318665}
+{"event": "step", "wall_ts": 1794242309.2, "sim_minute": 13845, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 318890}
+{"event": "step", "wall_ts": 1794242309.251, "sim_minute": 13860, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 319115}
+{"event": "step", "wall_ts": 1794242309.303, "sim_minute": 13875, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 319340}
+{"event": "step", "wall_ts": 1794242309.357, "sim_minute": 13890, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 319565}
+{"event": "step", "wall_ts": 1794242309.41, "sim_minute": 13905, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 319790}
+{"event": "step", "wall_ts": 1794242309.46, "sim_minute": 13920, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 320015}
+{"event": "step", "wall_ts": 1794242309.512, "sim_minute": 13935, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 320240}
+{"event": "step", "wall_ts": 1794242309.562, "sim_minute": 13950, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 320465}
+{"event": "step", "wall_ts": 1794242309.62, "sim_minute": 13965, "events": 225, "ingest_s": 0.017, "decisions_written": 0, "last_event_id": 320690}
+{"event": "step", "wall_ts": 1794242309.677, "sim_minute": 13980, "events": 225, "ingest_s": 0.015, "decisions_written": 0, "last_event_id": 320915}
+{"event": "step", "wall_ts": 1794242309.731, "sim_minute": 13995, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 321140}
+{"event": "step", "wall_ts": 1794242309.784, "sim_minute": 14010, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 321365}
+{"event": "step", "wall_ts": 1794242309.837, "sim_minute": 14025, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 321590}
+{"event": "step", "wall_ts": 1794242309.891, "sim_minute": 14040, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 321815}
+{"event": "step", "wall_ts": 1794242309.943, "sim_minute": 14055, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 322040}
+{"event": "step", "wall_ts": 1794242309.995, "sim_minute": 14070, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 322265}
+{"event": "step", "wall_ts": 1794242310.045, "sim_minute": 14085, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 322490}
+{"event": "step", "wall_ts": 1794242310.096, "sim_minute": 14100, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 322715}
+{"event": "step", "wall_ts": 1794242310.149, "sim_minute": 14115, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 322940}
+{"event": "step", "wall_ts": 1794242310.201, "sim_minute": 14130, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 323165}
+{"event": "step", "wall_ts": 1794242310.256, "sim_minute": 14145, "events": 225, "ingest_s": 0.014, "decisions_written": 0, "last_event_id": 323390}
+{"event": "step", "wall_ts": 1794242310.31, "sim_minute": 14160, "events": 225, "ingest_s": 0.013, "decisions_written": 0, "last_event_id": 323615}
+{"event": "step", "wall_ts": 1794242310.362, "sim_minute": 14175, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 323790}
+{"event": "step", "wall_ts": 1794242310.411, "sim_minute": 14190, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 323965}
+{"event": "step", "wall_ts": 1794242310.461, "sim_minute": 14205, "events": 175, "ingest_s": 0.012, "decisions_written": 0, "last_event_id": 324140}
+{"event": "step", "wall_ts": 1794242310.51, "sim_minute": 14220, "events": 175, "ingest_s": 0.011, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.548, "sim_minute": 14235, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.583, "sim_minute": 14250, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.62, "sim_minute": 14265, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.657, "sim_minute": 14280, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.693, "sim_minute": 14295, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.731, "sim_minute": 14310, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.767, "sim_minute": 14325, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.802, "sim_minute": 14340, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.839, "sim_minute": 14355, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.874, "sim_minute": 14370, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.909, "sim_minute": 14385, "events": 0, "ingest_s": 0.002, "decisions_written": 0, "last_event_id": 324315}
+{"event": "step", "wall_ts": 1794242310.956, "sim_minute": 14400, "events": 0, "ingest_s": 0.002, "decisions_written": 3, "last_event_id": 324315}
+{"event": "finished", "wall_ts": 1794242310.957, "run_id": 1, "last_event_id": 324315}
+[crash_test 22:08:31] PASS  every restart resumed (one run created): 1 run(s) created across 6 starts
+[crash_test 22:08:31] PASS  all chunks ingested: bookmark 496, sim chunks 497
+[crash_test 22:08:31] PASS  events saved == sim produced: 324315 vs 324315
+[crash_test 22:08:31] PASS  no gaps: ids 1..324315
+[crash_test 22:08:31] PASS  no duplicates: 324315 distinct of 324315
+[crash_test 22:08:31] PASS  scoreboard dials == raw calls: 245008 vs 245008
+[crash_test 22:08:31] PASS  scoreboard connected == raw: 64898 vs 64898
+[crash_test 22:08:31] PASS  one summary per workflow per day: 30 vs 10 days x 3 workflows
+[crash_test 22:08:31] PASS  one diary row per config change: 28 vs 28
+[crash_test 22:08:31] PASS  our changes reached the sim (something was in flight): 26 config change(s) by the controller
+[crash_test 22:08:31] PASS  no change applied twice: ['489156b0-nw_renewal-1', '489156b0-nw_renewal-2', '489156b0-nw_renewal-3', '489156b0-nw_renewal-4', '489156b0-nw_renewal-6', '489156b0-nw_renewal-7', '489156b0-nw_kyc-1', '489156b0-nw_kyc-2', '489156b0-ks_cancel-1', '489156b0-ks_cancel-2', '489156b0-ks_cancel-3', '489156b0-ks_cancel-4', '489156b0-ks_cancel-5', '489156b0-ks_cancel-6', '489156b0-ks_cancel-7', '489156b0-ks_cancel-8', '489156b0-ks_cancel-9', '489156b0-ks_cancel-10', '489156b0-ks_cancel-11', '489156b0-ks_cancel-12', '489156b0-ks_cancel-13', '489156b0-ks_cancel-14', '489156b0-ks_cancel-15', '489156b0-ks_cancel-16', '489156b0-ks_cancel-17', '489156b0-ks_cancel-18']
+[crash_test 22:08:31] PASS  sim's applied changes == ours recorded applied: sim 26, ours 26
+[crash_test 22:08:31] PASS  nothing left half-sent or half-applied: 0 open
+[crash_test 22:08:31] PASS  no change stuck in flight: 0 stuck
+[crash_test 22:08:31] PASS  no request refused by the sim: 0 refused
+[crash_test 22:08:31] RESULT: PASS

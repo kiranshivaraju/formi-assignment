@@ -1,0 +1,78 @@
+# Checker knobs: how sensitive our own detection rules are. Owned by Formi's platform team (the
+# people who set up a workflow), NOT the client's governance policy, which is always read live
+# from the simulator. A wrong key or a silly value stops the controller at startup (exit 2).
+#
+# `defaults` apply to every workflow; `workflows.<id>` overrides any of them for one workflow.
+
+storage:
+  # D6: raw call/lead events are kept this many sim days, then deleted (the running totals and
+  # every other event type are kept for good). Features read raw calls only for 24 h lead counts.
+  raw_event_days: 3
+
+gate:
+  step_gap_minutes: 60        # T3: wait between two steps of a change that is too big to apply at once
+  change_ttl_minutes: 60      # F3: a feature's change is dropped if it stops asking for it this long
+
+caller_id_health:
+  defaults:
+    window_hours: [3, 6, 12, 24]   # C2: look back 3 h; widen while either side has too few calls
+    min_calls: 200                 # C3: calls needed on each side before judging
+    min_relative_drop: 0.30        # C3: the number must answer at least 30% less often
+    min_z: 4.0                     # C3: and the gap must be at least 4 luck units
+    pass_z: 2.5                    # C10: a trial passes only this many luck units clear of the 30% line
+    verify_after_minutes: 180      # C9: compare before/after this long after the switch completes
+    probe_after_hours: 24          # C10: first second chance for a removed number
+    probe_share: 0.05              # C10: share of calls a removed number gets on trial
+    spread_spares: true            # L1 (Kiran): spread calls evenly over healthy numbers, never-used spares included
+    probe_min_healthy: 2           # L9: a removed number gets a second chance only when fewer healthy numbers are left
+    spare_trial_share: 0.1         # L2 (Kiran): share never-used spares get on trial (shared between them); 20% -> 10% after the load test
+  workflows: {}
+    # example: a quiet workflow judged on fewer calls
+    # nw_kyc: {min_calls: 150}
+
+script_health:
+  defaults:
+    min_calls: 100                 # H2: answered calls on a newly switched script before judging
+    drift_window_hours: 24         # H1: a script that did NOT change is judged on the last day, not 3 h:
+    drift_min_calls: 500           #     looking at 3 h windows every 15 min, luck alone trips the alarm
+    min_ratio: 2.0                 # H2: made-up rate at least double the reference
+    min_z: 4.0                     # H2: and at least 4 luck units
+    reference_days: 14             # H1: how far back the reference rate reaches
+    proven_min_calls: 500          # H4: a script is "proven" after this many real answered calls...
+    proven_max_rate: 0.03          # H4: ...with at most 3% made up (97% clean)
+    validation_n: 300              # H6: test-drive size (1 credit per 100)
+    validation_margin_z: 2.0       # H6: pass rate must clear the approver's bar by this many luck units
+    ai_ideas_to_test: 2            # H5: how many of the AI's ideas to test-drive (Kiran: default 2)
+    credits_per_incident: 15       # H7: most we spend on one incident
+    credit_reserve_share: 0.2      # H7: never let optional spending go below 20% of the starting credits
+    verify_after_minutes: 180      # H9: before/after check this long after the fix...
+    verify_min_calls: 500          #     ...on at least this many answered calls
+    verify_z: 2.0                  #     "not back to normal" / "engagement dropped" at this many luck units
+    min_made_up: 10                # H2: and at least this many flagged calls (a tiny reference can't alarm on 3)
+  workflows: {}
+
+experiments:
+  defaults:
+    enabled: true                  # E7: only ever runs where the primary KPI is engagement
+    control_share: equal           # E11 (Kiran): 'equal' = every option the same share (fastest), or a
+                                   #   number, e.g. 0.5 = today's option keeps half (safer, ~40% slower)
+    judge_hour: 9                  # E2: winners judged once a day, ready for the approvers' morning
+    min_calls: 400                 # E1: answered calls an option needs before it can win
+    win_z: 3.0                     # E1: 5 challengers x ~8 daily looks: z 3 keeps false winners ~5%
+    mde: 0.08                      # E9: smallest lift we try to find; sets when a test with no winner ends
+    harm_min_calls: 200            # E5: answered calls before an option can be stopped as harmful
+    harm_z: 3.0                    # E5: clearly worse than today's option: stopped at once
+    guard_z: 2.0                   # E6: guardrail KPI (pickup) / made-up calls clearly worse: no promotion
+    segment_min_calls: 100         # E12: calls per option inside a group before it is checked
+    segment_harm_z: 2.5            # E12: winner clearly worse for a group: that group keeps today's option
+    max_carve_outs: 4              # E12: more groups hurt than this: the "winner" is too uneven, not promoted
+    holdout_share: 0.2             # E13 (Kiran): share left on the old option after promoting, to spot fading
+    decay_window_hours: 48         # E13: fading judged on the last 48 h
+    decay_min_calls: 150           #      once the old option has this many answered calls in it
+    decay_z: 3.0                   #      lead over the old option fell this many luck units (and by half)
+    first_step_add: 0.1            # E16 (Kiran): promotion step 1 adds 10 points to the winner's share (a canary); the main share a day later if still ahead
+    recent_hours: 24               # E15: over the last 24 h a winner must keep at least half its lead (not fading)
+    lead_z: 2.0                    # E9 (Kiran): no winner, but this far ahead: keeps running 50/50 vs today's
+  workflows: {}
+    # example: a cautious client keeps half its calls on today's option during a test
+    # nw_renewal: {control_share: 0.5}
